@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context=".CoursesActivity">
+
+    <ImageView
+        android:id="@+id/imv_android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/imageMargin"
+        android:scaleType="fitXY"
+        android:src="@drawable/android"
+        app:layout_constraintBottom_toTopOf="@+id/btn_android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_button"
+        android:onClick="onCoursesClick"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/android_course"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imv_ios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_android" />
+
+    <ImageView
+        android:id="@+id/imv_ios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/imageMargin"
+        android:scaleType="fitXY"
+        android:src="@drawable/ios"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_android" />
+
+    <Button
+        android:id="@+id/btn_ios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_button"
+        android:onClick="onCoursesClick"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/ios_course"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imv_fullstack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_ios" />
+
+    <ImageView
+        android:id="@+id/imv_fullstack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/imageMargin"
+        android:scaleType="fitXY"
+        android:src="@drawable/fullstack"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fullstack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ios" />
+
+    <Button
+        android:id="@+id/btn_fullstack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_button"
+        android:onClick="onCoursesClick"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/fullstack_course"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_fullstack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
